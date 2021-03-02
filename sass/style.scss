@@ -164,6 +164,10 @@ button:hover {
 
   }
 
+  a:hover {
+    color: darkorange;
+  }
+
   .mid_top_content {
     @include standardWidth();
     display: flex;
@@ -310,13 +314,15 @@ button:hover {
 
 .our_team{
   padding: 50px 0 200px 0;
-
   margin: 0 auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
+
+
+
   
-  @include tablet() {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     padding-bottom: 50px;
   }
@@ -328,10 +334,6 @@ button:hover {
 
   .member_text {
     margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
     @include tablet() {
       width: 60%;
       margin-bottom: 15px;
@@ -350,16 +352,33 @@ button:hover {
 
   .member_para {
     margin-bottom: 15px;
-    
+    position: relative;
+
+    @include tablet() {
+      height: 100%;
+    }
 
   }
+
+
 
   .team_member {
     text-align: center;
     @include justifyVertical();
 
-   
-  
+   .first {
+    width:70%;
+
+   }
+
+   .second {
+     width:70%;
+   }
+   .third {
+    width:70%;
+ 
+  }
+ 
 
   }
   
@@ -370,8 +389,8 @@ button:hover {
 }
 
 .member_para.second {
-  width: 70%;
   margin: 0 auto;
+  padding-bottom: 16px;
 }
 
 .footer_line {

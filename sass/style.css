@@ -162,6 +162,10 @@ p {
   line-height: 2em;
 }
 
+.mid_content a:hover {
+  color: darkorange;
+}
+
 .mid_content .mid_top_content {
   width: 95%;
   margin: 0 auto;
@@ -355,7 +359,7 @@ p {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .our_team {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -371,17 +375,6 @@ p {
 
 .our_team .member_text {
   margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -403,6 +396,13 @@ p {
 
 .our_team .member_para {
   margin-bottom: 15px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .our_team .member_para {
+    height: 100%;
+  }
 }
 
 .our_team .team_member {
@@ -419,13 +419,25 @@ p {
           align-items: center;
 }
 
+.our_team .team_member .first {
+  width: 70%;
+}
+
+.our_team .team_member .second {
+  width: 70%;
+}
+
+.our_team .team_member .third {
+  width: 70%;
+}
+
 .our_team .member_name {
   color: #00965E;
 }
 
 .member_para.second {
-  width: 70%;
   margin: 0 auto;
+  padding-bottom: 16px;
 }
 
 .footer_line {
