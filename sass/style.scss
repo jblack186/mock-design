@@ -1,4 +1,29 @@
 
+$md: 992px;    // Medium
+$lg: 1200px;   // Large
+
+@mixin respond($breakpoint) {                 // Name your mixin 'respond', or whatever you like.
+  // '$breakpoint' is the argument we pass to our mixin. 
+
+@if $breakpoint == sm {
+@media (max-width: $sm) {     // Sets max-width as 768px, which we declared in our variables file.
+@content;                               // @content includes whatever styles we declare.
+}
+}
+
+@else if $breakpoint == md {
+@media (max-width: $md) {
+@content;
+}
+}
+
+@else if $breakpoint == lg {
+@media (max-width: $lg) {
+@content;
+}
+}
+}
+
 
 @mixin justifyVertical {
   display: flex;
@@ -11,17 +36,19 @@
   margin: 0 auto;
 }
 
-@mixin tablet {
-  @media screen and (max-width: 768px) {
+@mixin desktop {
+  @media screen and (max-width: 800px) {
     @content;
   }
 }
 
-@mixin mobile {
-  @media screen and (max-width: 280px) {
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
+
 
 $primaryColor: #00965E;
 $secondaryColor: rgb(0, 148, 5);
@@ -38,17 +65,27 @@ $primaryFont: Arial;
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 
-  @include tablet {
-    font-size: 1.1em;
+  h2 {
+    font-size: 4rem;
+
+  }
+
+  h3 {
+    font-weight: 100;
+    font-size: 3rem;
+
+  }
+
+  p {
+    font-size: 2rem;
+
   }
 
 
-@include mobile() {
-  font-size: 1.1em;
 }
 
-}
 
 p {
   line-height: 2em;
@@ -60,34 +97,45 @@ p {
   height: 150px;
   display: flex;
   align-items: center;
-  @include tablet() {
+
+  
+  @include respond(md) {
     width: 100%;
     height: 100px;
     justify-content: center;
+    margin: 40px 0 40px 0;
+
   }
+
   
-    @include tablet() {
+    @include respond(md){
       img {
-      width: 12em;
+      width: 40rem;
     }
     }
   }
 
+.image_container {
+  background-image: url("../images/top-image.png");
+  margin: 0 auto;
+  background-size: cover;
+  width: 98vw;
+  height: 450px;
+  object-fit: cover;
+  background-repeat: no-repeat;
 
-
-.top_image {
-  width: 100%;
-  object-fit: contain;
+  @include respond(md) {
+    background-image: url("../images/top-image2.png");
+  height: 700px;
+  backgroud-size: cover;
+  background-repeat: no-repeat;
+  
+  }
+}
 
  
-  @include tablet() {
-    object-fit: cover;
-    object-position: 10% 100%;
-            height: 400px;
-    
-  }
   
-}
+
 
 .top_content {
   text-align: center;
@@ -102,7 +150,6 @@ p {
   h2 {
     color: $primaryColor;
     font-weight: 250;
-    font-size: 2.2em;
   }
   .line {
     display: block;
@@ -114,9 +161,8 @@ p {
   p {
     text-align: left;
     padding-top: 20px;
-    
   }
-  @include tablet(){
+  @include respond(md){
     // align-items: center;
     width: 85%;
   }
@@ -153,7 +199,6 @@ button:hover {
   h3 {
     color: $primaryColor;
     padding-bottom: 8px;
-    font-size: 1.4em;
     font-weight: 100;
   }
 
@@ -161,6 +206,7 @@ button:hover {
     color: $secondaryColor;
     text-decoration: none;
     line-height: 2em;
+    font-size: 2rem;
 
   }
 
@@ -174,7 +220,7 @@ button:hover {
     justify-content: space-between;
     padding-top: 45px;
 
-    @include tablet() {
+    @include respond(md) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -191,7 +237,6 @@ button:hover {
   h2 {
     color: $primaryColor;
     font-weight: 200;
-    font-size: 2.2em;
 
   }
 
@@ -199,7 +244,7 @@ button:hover {
     width: 45%;
     text-align: left;
 
-    @include tablet() {
+    @include respond(md) {
       width: 100%;
       margin-bottom: 25px;
       padding-bottom: 25px;
@@ -219,7 +264,7 @@ button:hover {
     width: 45%;
     text-align: left;
 
-    @include tablet() {
+    @include respond(md) {
       width: 100%;
       margin-bottom: 25px;
       padding-bottom: 25px;
@@ -248,7 +293,7 @@ button:hover {
     justify-content: space-between;
     margin-top: 100px;
 
-    @include tablet() {
+    @include respond(md) {
       margin-top: 0px;
       flex-direction: column;
       justify-content: center;
@@ -264,7 +309,7 @@ button:hover {
     width: 45%;
     text-align: left;
 
-    @include tablet() {
+    @include respond(md) {
       width: 100%;
       margin-bottom: 25px;
       padding-bottom: 25px;
@@ -278,7 +323,7 @@ button:hover {
     width: 45%;
     text-align: left;
 
-    @include tablet() {
+    @include respond(md) {
       width: 100%;
 
     }
@@ -307,7 +352,7 @@ button:hover {
 
   }
 
-  @include tablet() {
+  @include respond(md) {
     width: 85%;
   }
 }
@@ -322,9 +367,10 @@ button:hover {
 
 
   
-  @media screen and (max-width: 1000px) {
+  @include respond(md) {
     flex-direction: column;
     padding-bottom: 50px;
+
   }
 
   p {
@@ -333,10 +379,10 @@ button:hover {
   }
 
   .member_text {
-    margin-top: 15px;
-    @include tablet() {
-      width: 60%;
-      margin-bottom: 15px;
+    margin-top: 20px;
+    @include respond(md) {
+      width: 70%;
+      margin-bottom: 35px;
     }
 
     .fa {
@@ -351,11 +397,13 @@ button:hover {
   }
 
   .member_para {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
 
-    @include tablet() {
+    @include respond(md) {
+      margin: 0 auto;
       height: 100%;
+      width: 60%;
     }
 
   }
@@ -399,12 +447,16 @@ button:hover {
 }
 
 footer {
-  font-size: .9em;
+
   padding: 30px 0 30px 0;
   @include standardWidth();
 
-@include tablet() {
+@include respond(md) {
   width: 85%;
+}
+p {
+  font-size: 1.8rem;
+
 }
 
   a {
