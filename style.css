@@ -212,7 +212,7 @@ p {
 }
 
 .our_team {
-  padding-top: 50px;
+  padding: 50px 0 200px 0;
   margin: 0 auto;
   width: 90%;
   display: -webkit-box;
@@ -228,6 +228,7 @@ p {
 }
 
 .our_team .member_text {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,10 +239,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 200px;
-  margin-top: 15px;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
 }
 
 .our_team .member_para {
@@ -257,20 +254,37 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.our_team .team_member img {
-  margin-bottom: 15px;
+.our_team .member_name {
+  color: #009405;
 }
 
-.our_team .second {
-  margin-left: 180px;
-  margin-right: 180px;
+.member_para.second {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer_line {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  font-size: .9em;
+  width: 95%;
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
+}
+
+footer a {
+  color: black;
+}
+
+footer .priv {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

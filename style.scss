@@ -174,7 +174,8 @@ p {
 }
 
 .our_team{
-  padding-top: 50px;
+  padding: 50px 0 200px 0;
+
   margin: 0 auto;
   width: 90%;
   display: flex;
@@ -186,18 +187,16 @@ p {
   }
 
   .member_text {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
-    margin-top: 15px;
-
-    align-content: stretch;
 
   }
 
   .member_para {
     margin-bottom: 15px;
+    
 
   }
 
@@ -205,24 +204,39 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 
-    img {
-      margin-bottom: 15px;
-    }
+
+   
   
 
   }
-  .second {
-    margin-left: 180px;
-    margin-right: 180px;
-
-  }
-
+  
   .member_name {
-    
+    color: $color;
   }
 
 }
 
+.member_para.second {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer_line {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  font-size: .9em;
+  width: 95%;
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
+  a {
+    color: black;
+  }
+  .priv {
+    text-decoration: none;
+  }
+}
