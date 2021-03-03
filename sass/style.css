@@ -31,18 +31,19 @@ html h3 {
 
 @media (max-width: 992px) {
   html h3 {
-    font-size: 4rem;
+    font-size: 4em;
   }
 }
 
 html p {
-  font-size: 2rem;
+  font-size: 16px;
   line-height: 30px;
   color: #666666;
 }
 
 @media (max-width: 992px) {
   html p {
+    font-size: 16px;
     line-height: 54px;
   }
 }
@@ -80,7 +81,7 @@ html p {
   background-image: url("../images/top-image.png");
   margin: 0 auto;
   background-size: cover;
-  width: 98vw;
+  width: 100vw;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -89,6 +90,7 @@ html p {
 
 @media (max-width: 992px) {
   .image_container {
+    width: 100vw;
     background-image: url("../images/top-image2.png");
     height: 700px;
     backgroud-size: cover;
@@ -117,7 +119,7 @@ html p {
 }
 
 .top_content h2 {
-  color: #00965E;
+  color: #00965e;
   font-weight: 250;
 }
 
@@ -125,7 +127,7 @@ html p {
   display: block;
   width: 80px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #00965E;
+  border-bottom: 2px solid #00965e;
 }
 
 .top_content p {
@@ -158,8 +160,8 @@ html p {
   font-size: 2rem;
   margin: 40px 0 40px 0;
   cursor: pointer;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @media (max-width: 992px) {
@@ -180,7 +182,7 @@ html p {
 }
 
 .mid_content h3 {
-  color: #00965E;
+  color: #00965e;
   padding-bottom: 8px;
   font-weight: 100;
 }
@@ -240,12 +242,13 @@ html p {
 @media (max-width: 992px) {
   .mid_content .advantage_header h2 {
     text-align: center;
+    font-weight: 300;
     width: 50%;
   }
 }
 
 .mid_content h2 {
-  color: #00965E;
+  color: #00965e;
   font-weight: 200;
 }
 
@@ -259,17 +262,26 @@ html p {
     width: 100%;
     margin-bottom: 40px;
     padding-bottom: 40px;
-    border-bottom: .5px solid black;
+    border-bottom: 0.5px solid black;
   }
 }
 
-.mid_content .left_mid_top_content .fa {
-  font-weight: 100;
+.mid_content .left_mid_top_content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  .mid_content .left_mid_top_content a {
+    font-size: 4rem;
+  }
 }
 
 .mid_content .vertical_line {
   width: 1px;
-  border-right: 1px solid #00965E;
+  border-right: 1px solid #00965e;
 }
 
 .mid_content .right_mid_top_content {
@@ -282,7 +294,7 @@ html p {
     width: 100%;
     margin-bottom: 40px;
     padding-bottom: 40px;
-    border-bottom: .5px solid black;
+    border-bottom: 0.5px solid black;
   }
 }
 
@@ -290,7 +302,7 @@ html p {
   display: block;
   width: 100px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #00965E;
+  border-bottom: 2px solid #00965e;
 }
 
 .mid_content p {
@@ -336,7 +348,7 @@ html p {
     width: 100%;
     margin-bottom: 40px;
     padding-bottom: 40px;
-    border-bottom: .5px solid black;
+    border-bottom: 0.5px solid black;
   }
 }
 
@@ -357,7 +369,7 @@ html p {
 }
 
 .loan_content .loan_banner {
-  background: #00965E;
+  background: #00965e;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,14 +446,15 @@ html p {
   }
 }
 
-.our_team .member_text .fa {
-  color: lightgray;
-  font-size: 4em;
+.our_team .member_text img {
+  width: 12rem;
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: -30px;
+  left: -25px;
   z-index: -1;
-  opacity: .7;
+  opacity: 0.9;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .our_team .member_para {
@@ -484,7 +497,7 @@ html p {
 }
 
 .our_team .member_name {
-  color: #00965E;
+  color: #00965e;
 }
 
 .member_para.second {
@@ -522,26 +535,28 @@ footer .priv {
 }
 
 footer .icons {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  padding-top: 12px;
   padding-bottom: 30px;
   font-size: 3em;
   cursor: pointer;
 }
 
-footer .fa-facebook-square {
-  color: #4267B2;
-  border-radius: none;
+@media (max-width: 992px) {
+  footer .icons {
+    width: 30%;
+  }
 }
 
-footer .fa-twitter-square {
-  color: #00acee;
-}
-
-footer .fa-linkedin-square {
-  color: #0e76a8;
-}
-
-footer .fa-youtube-square {
-  color: #FF0000;
+footer .icons img {
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
