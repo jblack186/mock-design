@@ -17,18 +17,33 @@ html h2 {
   font-size: 4rem;
 }
 
+@media (max-width: 992px) {
+  html h2 {
+    font-size: 6rem;
+  }
+}
+
 html h3 {
   font-weight: 100;
   font-size: 3rem;
 }
 
-html p {
-  font-size: 2rem;
+@media (max-width: 992px) {
+  html h3 {
+    font-size: 4rem;
+  }
 }
 
-p {
-  line-height: 2em;
+html p {
+  font-size: 2rem;
+  line-height: 30px;
   color: #666666;
+}
+
+@media (max-width: 992px) {
+  html p {
+    line-height: 50px;
+  }
 }
 
 .logo_container {
@@ -135,15 +150,23 @@ p {
 .view_button button {
   background: darkorange;
   color: white;
-  height: 35px;
-  width: 180px;
+  height: 40px;
+  width: 200px;
   padding: 5px;
   border: none;
-  font-size: 1.2em;
+  font-size: 2rem;
   margin: 40px 0 40px 0;
   cursor: pointer;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
+}
+
+@media (max-width: 992px) {
+  .view_button button {
+    width: 400px;
+    height: 70px;
+    font-size: 4.2rem;
+  }
 }
 
 .view_button button:hover {
@@ -226,8 +249,8 @@ p {
 @media (max-width: 992px) {
   .mid_content .left_mid_top_content {
     width: 100%;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: .5px solid black;
   }
 }
@@ -249,8 +272,8 @@ p {
 @media (max-width: 992px) {
   .mid_content .right_mid_top_content {
     width: 100%;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: .5px solid black;
   }
 }
@@ -303,8 +326,8 @@ p {
 @media (max-width: 992px) {
   .mid_content .left_mid_bottom_content {
     width: 100%;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: .5px solid black;
   }
 }
@@ -334,7 +357,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 .loan_content h3 {
@@ -343,7 +366,8 @@ p {
 
 .loan_content .loan_text {
   background: whitesmoke;
-  padding: 2em;
+  padding: 5rem;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -378,6 +402,12 @@ p {
   margin-bottom: 15px;
 }
 
+@media (max-width: 992px) {
+  .our_team p {
+    font-size: 3rem;
+  }
+}
+
 .our_team .member_text {
   margin-top: 20px;
 }
@@ -408,7 +438,7 @@ p {
   .our_team .member_para {
     margin: 0 auto;
     height: 100%;
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -465,7 +495,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 footer a {
@@ -477,6 +507,7 @@ footer .priv {
 }
 
 footer .icons {
+  width: 50%;
   padding-bottom: 30px;
   font-size: 3em;
   cursor: pointer;
