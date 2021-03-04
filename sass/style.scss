@@ -213,7 +213,7 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 85%;
+      width: 100%;
     }
   }
 
@@ -241,7 +241,7 @@ html {
     text-align: left;
 
     @include respond(md) {
-      width: 100%;
+      width: 85%;
       margin-bottom: 40px;
       padding-bottom: 40px;
       border-bottom: 0.5px solid black;
@@ -254,7 +254,6 @@ html {
         font-size: 4rem;
       }
     }
-    
   }
 
   .vertical_line {
@@ -267,7 +266,7 @@ html {
     text-align: left;
 
     @include respond(md) {
-      width: 100%;
+      width: 85%;
       margin-bottom: 40px;
       padding-bottom: 40px;
       border-bottom: 0.5px solid black;
@@ -297,7 +296,8 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 85%;
+      width: 100%;
+
     }
   }
 
@@ -306,7 +306,7 @@ html {
     text-align: left;
 
     @include respond(md) {
-      width: 100%;
+      width: 85%;
       margin-bottom: 40px;
       padding-bottom: 40px;
       border-bottom: 0.5px solid black;
@@ -318,13 +318,14 @@ html {
     text-align: left;
 
     @include respond(md) {
-      width: 100%;
+      width: 85%;
     }
   }
 }
 
 .loan_content {
   @include standardWidth();
+
 
   .loan_banner {
     background: $primaryColor;
@@ -335,28 +336,36 @@ html {
     text-align: center;
 
     h3 {
+      font-weight: 200;
+      
       @include respond(md) {
-        width: 70%;
+        font-size: 5.5904rem;
+        // width: 70%;
       }
-    }
+  
+
   }
 
-  h3 {
-    font-weight: 100;
+  
+  
   }
 
   .loan_text {
     background: whitesmoke;
     padding: 5rem;
-    width: 100%;
+
+  
   }
 
   @include respond(md) {
     width: 85%;
   }
+
+  
 }
 
 .our_team {
+
   padding: 50px 0 200px 0;
   margin: 0 auto;
   width: 90%;
@@ -372,7 +381,9 @@ html {
     margin-bottom: 15px;
 
     @include respond(md) {
-      font-size: 3rem;
+      font-size: 4.3904rem;
+      line-height: 54px;
+      
     }
   }
 
@@ -391,6 +402,7 @@ html {
       z-index: -1;
       opacity: 0.9;
       transform: rotate(180deg);
+      
     }
   }
 
@@ -421,15 +433,26 @@ html {
     }
   }
 
+
   .member_name {
+    margin-top: 50px;
+
     color: $primaryColor;
   }
+  
 }
 
 .member_para.second {
   margin: 0 auto;
   padding-bottom: 16px;
 }
+.member_pic {
+  @include respond(md) {
+    width: 350px;
+  }
+
+}
+
 
 .footer_line {
   width: 100%;
@@ -474,5 +497,4 @@ footer {
       width: 50px;
     }
   }
-
 }
