@@ -160,8 +160,6 @@ html p {
   font-size: 2rem;
   margin: 40px 0 40px 0;
   cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 @media (max-width: 992px) {
@@ -175,6 +173,8 @@ html p {
 .view_button button:hover {
   background: whitesmoke;
   color: darkorange;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .mid_content {
@@ -412,6 +412,7 @@ html p {
   padding: 50px 0 200px 0;
   margin: 0 auto;
   width: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
