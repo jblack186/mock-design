@@ -31,20 +31,20 @@ html h3 {
 
 @media (max-width: 992px) {
   html h3 {
-    font-size: 4em;
+    font-size: 3.7em;
   }
 }
 
 html p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 40px;
   color: #666666;
 }
 
 @media (max-width: 992px) {
   html p {
     font-size: 16px;
-    line-height: 54px;
+    line-height: 70px;
   }
 }
 
@@ -73,7 +73,7 @@ html p {
 
 @media (max-width: 992px) {
   .logo_container img {
-    width: 40rem;
+    width: 60rem;
   }
 }
 
@@ -120,7 +120,7 @@ html p {
 
 .top_content h2 {
   color: #00965e;
-  font-weight: 250;
+  font-weight: 500;
 }
 
 .top_content .line {
@@ -151,7 +151,7 @@ html p {
 }
 
 .view_button button {
-  background: darkorange;
+  background: #c87611;
   color: white;
   height: 40px;
   width: 200px;
@@ -167,7 +167,7 @@ html p {
 @media (max-width: 992px) {
   .view_button button {
     width: 400px;
-    height: 70px;
+    height: 100px;
     font-size: 4.2rem;
   }
 }
@@ -242,7 +242,7 @@ html p {
 @media (max-width: 992px) {
   .mid_content .advantage_header h2 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     width: 50%;
   }
 }
@@ -255,6 +255,12 @@ html p {
 .mid_content .left_mid_top_content {
   width: 45%;
   text-align: left;
+}
+
+@media (max-width: 992px) {
+  .mid_content .left_mid_top_content img {
+    with: 40px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -387,7 +393,7 @@ html p {
 
 @media (max-width: 992px) {
   .loan_content .loan_banner h3 {
-    font-size: 5.5904rem;
+    font-size: 5.4404rem;
   }
 }
 
@@ -492,8 +498,20 @@ html p {
   width: 70%;
 }
 
+@media (max-width: 992px) {
+  .our_team .team_member .second {
+    width: 80%;
+  }
+}
+
 .our_team .team_member .third {
   width: 70%;
+}
+
+@media (max-width: 992px) {
+  .our_team .team_member .third {
+    width: 80%;
+  }
 }
 
 .our_team .member_name {
