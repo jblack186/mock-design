@@ -125,6 +125,8 @@ html {
   }
 }
 
+// Investment information styling
+
 .top_content {
   text-align: center;
   @include standardWidth();
@@ -150,7 +152,6 @@ html {
     padding-top: 20px;
   }
   @include respond(md) {
-    // align-items: center;
     width: 85%;
   }
 }
@@ -182,6 +183,8 @@ html {
     transition-duration: 0.5s;
   }
 }
+
+// What Citizen Bank offers styling
 
 .mid_content {
   padding-bottom: 50px;
@@ -328,6 +331,8 @@ html {
   }
 }
 
+// Loan information styling
+
 .loan_content {
   @include standardWidth();
 
@@ -358,6 +363,8 @@ html {
     width: 85%;
   }
 }
+
+// Team Member styling
 
 .our_team {
   padding: 50px 0 200px 0;
@@ -413,7 +420,7 @@ html {
   .team_member {
     text-align: center;
     @include justifyVertical();
-
+    height: 584p;
     .first {
       width: 80%;
     }
@@ -426,7 +433,7 @@ html {
       }
     }
     .third {
-      width: 70%;
+      width: 74%;
       @include respond(md) {
         width: 80%;
       }
@@ -442,7 +449,6 @@ html {
 
 .member_para.second {
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 .member_pic {
   @include respond(md) {
@@ -454,6 +460,8 @@ html {
   width: 100%;
   border-bottom: 1px solid black;
 }
+
+// Footer Styling
 
 footer {
   padding: 30px 0 30px 0;

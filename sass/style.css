@@ -489,6 +489,7 @@ html p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 584p;
 }
 
 .our_team .team_member .first {
@@ -506,7 +507,7 @@ html p {
 }
 
 .our_team .team_member .third {
-  width: 70%;
+  width: 74%;
 }
 
 @media (max-width: 992px) {
@@ -522,7 +523,6 @@ html p {
 
 .member_para.second {
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 @media (max-width: 992px) {
