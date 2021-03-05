@@ -11,39 +11,32 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-html h2 {
-  font-size: 4rem;
 }
 
 @media (max-width: 992px) {
   html h2 {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
 }
 
 html h3 {
   font-weight: 100;
-  font-size: 3rem;
 }
 
 @media (max-width: 992px) {
   html h3 {
-    font-size: 3.7em;
+    font-size: 3rem;
   }
 }
 
 html p {
-  font-size: 16px;
   line-height: 40px;
   color: #666666;
 }
 
 @media (max-width: 992px) {
   html p {
-    font-size: 16px;
+    font-size: 2rem;
     line-height: 70px;
   }
 }
@@ -73,7 +66,7 @@ html p {
 
 @media (max-width: 992px) {
   .logo_container img {
-    width: 60rem;
+    width: 40rem;
   }
 }
 
@@ -157,16 +150,16 @@ html p {
   width: 200px;
   padding: 5px;
   border: none;
-  font-size: 2rem;
   margin: 40px 0 40px 0;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 992px) {
   .view_button button {
+    font-size: 2rem;
     width: 400px;
     height: 100px;
-    font-size: 4.2rem;
   }
 }
 
@@ -276,13 +269,6 @@ html p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
-}
-
-@media (max-width: 992px) {
-  .mid_content .left_mid_top_content a {
-    font-size: 4rem;
-  }
 }
 
 .mid_content .vertical_line {
@@ -391,12 +377,6 @@ html p {
   font-weight: 200;
 }
 
-@media (max-width: 992px) {
-  .loan_content .loan_banner h3 {
-    font-size: 5.4404rem;
-  }
-}
-
 .loan_content .loan_text {
   background: whitesmoke;
   padding: 5rem;
@@ -437,7 +417,6 @@ html p {
 
 @media (max-width: 992px) {
   .our_team p {
-    font-size: 4.3904rem;
     line-height: 54px;
   }
 }
@@ -454,7 +433,7 @@ html p {
 }
 
 .our_team .member_text img {
-  width: 12rem;
+  width: 5rem;
   position: absolute;
   top: -30px;
   left: -25px;
@@ -542,14 +521,17 @@ footer {
   margin: 0 auto;
 }
 
+footer p {
+  font-size: .97rem;
+}
+
 @media (max-width: 992px) {
   footer {
     width: 85%;
   }
-}
-
-footer p {
-  font-size: 1.2rem;
+  footer p {
+    font-size: 1.5rem;
+  }
 }
 
 footer a {
