@@ -472,7 +472,7 @@ footer {
   @include respond(md) {
     p {
       line-height: 30px;
-      font-size: clamp(18px, 4vw, 25px);
+      font-size: clamp(16px, 4vw, 22px);
 
     }
 
