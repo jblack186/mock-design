@@ -13,31 +13,26 @@ html {
           box-sizing: border-box;
 }
 
-@media (max-width: 992px) {
-  html h2 {
-    font-size: 3.5rem;
-  }
+html h2 {
+  font-size: clamp(30px, 5.5vw, 55px);
+  font-weight: 500;
 }
 
 html h3 {
-  font-weight: 100;
-}
-
-@media (max-width: 992px) {
-  html h3 {
-    font-size: 3rem;
-  }
+  font-weight: 300;
+  font-size: clamp(25px, 4.2vw, 40px);
 }
 
 html p {
   line-height: 40px;
+  font-size: clamp(1vh, 1rem, 1.3vw);
   color: #666666;
 }
 
 @media (max-width: 992px) {
   html p {
-    font-size: 2rem;
-    line-height: 70px;
+    font-size: clamp(1vh, 2rem, 3vw);
+    line-height: 50px;
   }
 }
 
@@ -183,8 +178,15 @@ html p {
 .mid_content a {
   color: #009405;
   text-decoration: none;
-  line-height: 2em;
-  font-size: 2rem;
+  line-height: 40px;
+  font-size: clamp(1vh, 1rem, 1.3vw);
+}
+
+@media (max-width: 992px) {
+  .mid_content a {
+    font-size: clamp(1vh, 2rem, 3vw);
+    line-height: 50px;
+  }
 }
 
 .mid_content a:hover {
@@ -252,7 +254,7 @@ html p {
 
 @media (max-width: 992px) {
   .mid_content .left_mid_top_content img {
-    with: 40px;
+    width: 50px;
   }
 }
 
@@ -377,6 +379,12 @@ html p {
   font-weight: 200;
 }
 
+@media (max-width: 992px) {
+  .loan_content .loan_banner h3 {
+    width: 70%;
+  }
+}
+
 .loan_content .loan_text {
   background: whitesmoke;
   padding: 5rem;
@@ -433,9 +441,9 @@ html p {
 }
 
 .our_team .member_text img {
-  width: 5rem;
+  width: 10rem;
   position: absolute;
-  top: -30px;
+  top: -40px;
   left: -25px;
   z-index: -1;
   opacity: 0.9;
@@ -504,9 +512,13 @@ html p {
   margin: 0 auto;
 }
 
+.member_pic {
+  width: 12rem;
+}
+
 @media (max-width: 992px) {
   .member_pic {
-    width: 350px;
+    width: 20rem;
   }
 }
 
@@ -522,7 +534,8 @@ footer {
 }
 
 footer p {
-  font-size: .97rem;
+  line-height: 25px;
+  font-size: clamp(14px, 3vw, 15px);
 }
 
 @media (max-width: 992px) {
@@ -530,7 +543,8 @@ footer p {
     width: 85%;
   }
   footer p {
-    font-size: 1.5rem;
+    line-height: 30px;
+    font-size: clamp(18px, 4vw, 25px);
   }
 }
 
